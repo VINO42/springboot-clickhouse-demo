@@ -30,6 +30,8 @@ public class HikaricpConfig {
         datasource.setDriverClassName(clickJdbcConfig.getDriverClassName());
         datasource.setMaximumPoolSize(clickJdbcConfig.getMaximumPoolSize());
         datasource.setMinimumIdle(clickJdbcConfig.getMinimumIdle());
+        datasource.setPassword(clickJdbcConfig.getPassword());
+        datasource.setUsername(clickJdbcConfig.getUserName());
         return datasource;
     }
     
